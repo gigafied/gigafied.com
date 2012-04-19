@@ -112,7 +112,17 @@ module.exports = {
 		cleanup some files, git commit/push, or whatever you feel like. Just be sure to invoke the `done()` function afterwards.
 	*/
 	postBuild : function (done) {
-		done();
+
+		var ExecQueue = require("./utils/exec-queue");
+
+		var q = new ExecQueue();
+
+		q.add("git add .")
+			.add("git commit -m 'New Build'")
+			.add("git push heroku");
+
+		q.run(process.cwd(), done);
+
 	}
 
 };
