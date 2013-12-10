@@ -1,7 +1,19 @@
 {
   "name": "gigafied.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "node-static": "0.5.x"
+    "express": "~3.4.6",
+    "swig": "~1.2.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-es6-module-transpiler": "~0.5.2",
+    "stylus": "~0.41.1",
+    "grunt-tasks-lister": "~0.1.0",
+    "grunt-contrib-stylus": "~0.11.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.2.7"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "gigafied.com",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gigafied/gigafied.com",
+  "authors": [
+    "Taka Kojima <taka@gigafied.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "project/source/js/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.9",
+    "requirejs-text": "~2.0.10",
+    "ember": "~1.2.0",
+  }
+}

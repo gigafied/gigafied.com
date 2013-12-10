@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Taka Kojima - Frontend Developer</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link rel="stylesheet" href="static/css/style.css">
+
+	</head>
+
+	<body>
+		{% raw %}
+			<script type="text/x-handlebars">
+
+				<div id="container">
+
+					<header>
+						<h1 class="logo">
+							<span class="bracket">{</span><span class="giga">giga</span><span class="fied">fied</span><span class="bracket">}</span>
+						</h1>
+
+						<nav>
+							<ul>
+								<li>{{#linkTo 'about'}}about{{/linkTo}}</li>
+								<li>{{#linkTo 'work'}}work{{/linkTo}}</li>
+								<li>{{#linkTo 'contact'}}contact{{/linkTo}}</li>
+							</ul>
+						</nav>
+
+					</header>
+
+						<div id="content" class="inactive">
+							{{outlet main}}
+						</div>
+
+					<footer>
+					</footer>
+
+				</div>
+			</script>
+		{% endraw %}
+
+		<script src="source/js/components/requirejs/require.js"></script>
+		<script src="source/js/config.js"></script>
+
+		<script>
+
+			require.config({
+				baseUrl : "source/js",
+				urlArgs : "cacheBust=" + (new Date()).getTime()
+			});
+
+                require(["app/App"], function (App) {
+
+                });
+
+		</script>
+	</body>
+</html>
