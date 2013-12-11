@@ -9,6 +9,16 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true
 			}
+		},
+		server: {
+			files: ['project/source/**/*', '!project/source/js/components/**/*', 'project/templates/**/*'],
+			tasks: ['start_server'],
+			options: {
+				spawn : false,
+				atBegin : true,
+				interrupt: true,
+				livereload : true
+			},
 		}
 	});
 

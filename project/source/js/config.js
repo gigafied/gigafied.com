@@ -1,9 +1,11 @@
 require.config({
+
     paths: {
         "$": "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery",
         "text": "components/requirejs-text/text",
+        "ehbs" : "components/requirejs-ember-handlebars/ehbs",
         "Ember" : "components/ember/ember",
-        "HBS": "components/handlebars/handlebars",
+        "Handlebars": "components/handlebars/handlebars",
         "templates": "../templates"
     },
 
@@ -15,13 +17,17 @@ require.config({
             exports: "jQuery"
         },
 
-        "HBS": {
+        "Handlebars": {
             exports: "Handlebars"
         },
 
         "Ember": {
-            deps: ["$", "HBS"],
+            deps: ["$", "Handlebars"],
             exports: "Ember"
         }
+    },
+
+    ehbs : {
+        templatePath : "app/templates/"
     }
 });

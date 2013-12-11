@@ -4,24 +4,17 @@ define(
 		"Ember"
 	],
 
-	function (Ember) {
+	function (Ember, Router) {
 
 		"use strict";
 
+        var App = Ember.Application.create();
+        App.deferReadiness();
 
-		var App = Ember.Application.create();
-
-		App.Router.map(function () {
-			this.resource("about");
-			this.resource("work");
-			this.resource("contact");
-
+		require(['app/Router'], function (Router) {
+			Router.init(App);
+			App.advanceReadiness();
 		});
-
-
-		App.Router.reopen({
-			location: 'history'
-		});	
 
 		return App;
 	}

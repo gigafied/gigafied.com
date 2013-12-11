@@ -18,7 +18,7 @@
 		{% raw %}
 			<script type="text/x-handlebars">
 
-				<div id="container">
+				<div id="container"> 
 
 					<header>
 						<h1 class="logo">
@@ -35,8 +35,8 @@
 
 					</header>
 
-						<div id="content" class="inactive">
-							{{outlet main}}
+						<div id="content" class="">
+							{{outlet}}
 						</div>
 
 					<footer>
@@ -46,6 +46,7 @@
 			</script>
 		{% endraw %}
 
+        <script src="source/js/components/ember/ember.js"></script>
 		<script src="source/js/components/requirejs/require.js"></script>
 		<script src="source/js/config.js"></script>
 
@@ -56,9 +57,10 @@
 				urlArgs : "cacheBust=" + (new Date()).getTime()
 			});
 
-                require(["app/App"], function (App) {
+            require(["app/App"], function (App) {
 
-                });
+
+            });
 
 		</script>
 	</body>

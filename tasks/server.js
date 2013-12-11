@@ -3,29 +3,29 @@ module.exports = function(grunt) {
 
 	"use strict";
 
-	grunt.registerTask('server', 'Start a local web server', function() {
+	var child;
+
+	grunt.registerTask('start_server', 'Start a local web server', function(port) {
 
  		var done = this.async();
 
-		var swig = require("swig"),
-			express = require('express'),
-			app = express();
+		port = port || 8000;
 
-		app.engine('html', swig.renderFile);
-		app.set('view engine', 'html');
-		app.set('views', 'project/templates');
+		if (child) {
+			child.kill();
+		}
 
-		app.use("/static", express.static('project/static'));
-		app.use("/source", express.static('project/source'));
-
-		app.get("*", function(req, res){
-			res.render("index.html");
+		child = grunt.util.spawn({cmd : process.argv[0], args : ["server.js", "-p", port]}, function () {
+			done();
 		});
 
+		child.stdout.pipe(process.stdout);
+		child.stderr.pipe(process.stderr);
+	});
 
-		app.listen(8000);
-		console.log('Listening on port 8000');
+	grunt.registerTask('server', 'Run a local web server', function(port) {
 
+		grunt.task.run("watch:server");
 	});
 
 };
