@@ -12,7 +12,6 @@ define(
         App.deferReadiness();
 
 		require(['app/Router'], function (Router) {
-			Router.init(App);
 			App.advanceReadiness();
 		});
 
