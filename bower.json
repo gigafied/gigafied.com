@@ -19,6 +19,8 @@
     "requirejs": "~2.1.9",
     "requirejs-text": "~2.0.10",
     "ember": "~1.2.0",
-    "requirejs-ember-handlebars": "*"
+    "requirejs-ember-handlebars": "*",
+    "ember-animated-outlet": "~1.0.0-beta",
+    "ember-animate": "*"
   }
 }

@@ -27,17 +27,15 @@
 
 						<nav>
 							<ul>
-								<li>{{#linkTo 'about'}}about{{/linkTo}}</li>
-								<li>{{#linkTo 'work'}}work{{/linkTo}}</li>
-								<li>{{#linkTo 'contact'}}contact{{/linkTo}}</li>
+								<li>{{#link-to 'about'}}about{{/link-to}}</li>
+								<li>{{#link-to 'work'}}work{{/link-to}}</li>
+								<li>{{#link-to 'contact'}}contact{{/link-to}}</li>
 							</ul>
 						</nav>
 
 					</header>
 
-						<div id="content" class="">
-							{{outlet}}
-						</div>
+					{{outlet "main"}}
 
 					<footer>
 					</footer>
@@ -46,7 +44,6 @@
 			</script>
 		{% endraw %}
 
-        <script src="source/js/components/ember/ember.js"></script>
 		<script src="source/js/components/requirejs/require.js"></script>
 		<script src="source/js/config.js"></script>
 

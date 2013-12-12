@@ -3,14 +3,16 @@ define(
 	[
 		"Ember",
 		"app/App",
+		"./ContentRoute",
+		"../views/WorkView",
 		"ehbs!work"
 	],
 
-	function (Ember, App, template) {
+	function (Ember, App, ContentRoute, View, template) {
 
 		"use strict";
 
-		App.WorkRoute = Ember.Route.extend({
+		App.WorkRoute = ContentRoute.extend({
 
 		});
 

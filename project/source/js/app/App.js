@@ -1,10 +1,11 @@
 define(
 
 	[
-		"Ember"
+		"Ember",
+		"EmberAnimate"
 	],
 
-	function (Ember, Router) {
+	function (Ember, EmberAnimatedOutlet) {
 
 		"use strict";
 

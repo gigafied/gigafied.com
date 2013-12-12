@@ -1,7 +1,6 @@
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
  */
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
@@ -241,24 +240,27 @@ body h3{
 
 
 
-#container > #content{
+#container > .content{
   position: absolute;
-  left: 0;
-  right: 0;
   top: 50%;
   margin-top: -81px;
   width: 100%;
   background: rgba(0,0,0,0.25);
-  padding: 30px 0px;
+  overflow : hidden;
+
+  .content-block {
+    margin : 30px 0;
+  }
+
 }
 
 
-#container > #content.inactive{
+#container > .content.inactive{
   width: 0px;
 }
 
 
-#container > #content p{
+#container > .content p{
   line-height: 24px;
   text-align: cen;
   margin: 0 0 15px 0;
@@ -267,21 +269,21 @@ body h3{
 
 
 
-#container > #content ul{
+#container > .content ul{
   margin: 15px 0 0 30px;
   padding: 0;
 }
 
 
   
-#container > #content ul li{
+#container > .content ul li{
   margin: 0;
   padding: 0 0 0 5px;
   line-height: 24px;
 }    
 
 
-#container > #content ul.icons{
+#container > .content ul.icons{
   margin: 0 0;
   padding: 0 0 0 20px;
   width: 288px;
@@ -289,7 +291,7 @@ body h3{
 }
 
     
-#container > #content ul.icons li{
+#container > .content ul.icons li{
   display: block;
   float: left;
   margin: 0 32px 0 0;
@@ -297,12 +299,12 @@ body h3{
 }
 
   
-#container > #content ul.icons li:last-child{
+#container > .content ul.icons li:last-child{
   margin: 0 0 0 0;
 }
 
 
-#container > #content ul.icons li a{
+#container > .content ul.icons li a{
   width: 32px;
   height: 32px;
   font-size: 10px;
@@ -318,39 +320,39 @@ body h3{
 }
 
       
-#container > #content ul.icons li a:hover{
+#container > .content ul.icons li a:hover{
   -webkit-box-shadow:0 0 15px rgba(255,255,255,0.5); 
   -moz-box-shadow: 0 0 15px rgba(255,255,255,0.5);
   box-shadow:0 0 15px rgba(255,255,255,0.5);
 }
 
 
-#container > #content ul.icons li a.twitter{
+#container > .content ul.icons li a.twitter{
   background: url("../img/icons/twitter.png");
 }
 
 
-#container > #content ul.icons li a.linkedin{
+#container > .content ul.icons li a.linkedin{
   background: url("../img/icons/linkedin.png");
 }
 
 
-#container > #content ul.icons li a.github{
+#container > .content ul.icons li a.github{
   background: url("../img/icons/github.png");
 }
 
 
-#container > #content ul.icons li a.email{
+#container > .content ul.icons li a.email{
   background: url("../img/icons/email.png");
 }
 
 
-#container > #content ul.icons li a.facebook{
+#container > .content ul.icons li a.facebook{
   background: url("../img/icons/facebook.png");
 }
 
   
-#container > #content ul.work{
+#container > .content ul.work{
   margin: 0 0;
   padding: 0;
   max-height: 300px;
@@ -359,7 +361,7 @@ body h3{
 }
 
   
-#container > #content ul.work li{
+#container > .content ul.work li{
   display: block;
   float: left;
   clear: none;

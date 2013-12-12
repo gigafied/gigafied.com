@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 	grunt.config("stylus", {
 		compile: {
 			options: {
+				'include css' : true,
 				paths: [],
 				urlfunc: 'embedurl', // use embedurl('test.png') in our code to trigger Data URI embedding
 				use: [

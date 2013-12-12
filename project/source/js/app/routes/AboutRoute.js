@@ -3,14 +3,16 @@ define(
 	[
 		"Ember",
 		"app/App",
+		"./ContentRoute",
+		"../views/AboutView",
 		"ehbs!about"
 	],
 
-	function (Ember, App, template) {
+	function (Ember, App, ContentRoute, View, template) {
 
 		"use strict";
 
-		App.AboutRoute = Ember.Route.extend({
+		App.AboutRoute = ContentRoute.extend({
 
 		});
 

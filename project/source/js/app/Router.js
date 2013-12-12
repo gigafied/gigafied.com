@@ -13,9 +13,9 @@ define(
 		"use strict";
 
 		App.Router.map(function () {
-			this.resource("about");
-			this.resource("work");
-			this.resource("contact");
+			this.route("about");
+			this.route("work");
+			this.route("contact");
 		});
 
 		App.Router.reopen({

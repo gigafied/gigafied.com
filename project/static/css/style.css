@@ -68,23 +68,24 @@ body h3{margin:0 0 15px;font-size:16px;font-weight:normal;color:#fff;text-decora
 #container > header > nav > ul li > a:active,#container > header > nav > ul li > a:hover,#container > header > nav > ul li > a.active{color:#efefef;text-decoration:none;background:rgba(0,0,0,0.25)}
 #container > header > nav > ul li:after{content:"";display:inline-block;margin:0 20px;height:10px;width:1px;border-left:1px solid #b9b9b9}
 #container > header > nav > ul li:last-child:after{display:none}
-#container > #content{position:absolute;left:0;right:0;top:50%;margin-top:-81px;width:100%;background:rgba(0,0,0,0.25);padding:30px 0}
-#container > #content.inactive{width:0}
-#container > #content p{line-height:24px;text-align:cen;margin:0 0 15px 0;padding:0 0}
-#container > #content ul{margin:15px 0 0 30px;padding:0}
-#container > #content ul li{margin:0;padding:0 0 0 5px;line-height:24px}
-#container > #content ul.icons{margin:0 0;padding:0 0 0 20px;width:288px;margin:auto}
-#container > #content ul.icons li{display:block;float:left;margin:0 32px 0 0;padding:0}
-#container > #content ul.icons li:last-child{margin:0 0 0 0}
-#container > #content ul.icons li a{width:32px;height:32px;font-size:10px;color:rgba(0,0,0,0);display:block;cursor:pointer;-webkit-border-radius:8px;-webkit-transition:all .25s ease-out;-moz-transition:all .25s ease-out;-o-transition:all .25s ease-out;transition:all .25s ease-out}
-#container > #content ul.icons li a:hover{-webkit-box-shadow:0 0 15px rgba(255,255,255,0.5);-moz-box-shadow:0 0 15px rgba(255,255,255,0.5);box-shadow:0 0 15px rgba(255,255,255,0.5)}
-#container > #content ul.icons li a.twitter{background:url("../img/icons/twitter.png")}
-#container > #content ul.icons li a.linkedin{background:url("../img/icons/linkedin.png")}
-#container > #content ul.icons li a.github{background:url("../img/icons/github.png")}
-#container > #content ul.icons li a.email{background:url("../img/icons/email.png")}
-#container > #content ul.icons li a.facebook{background:url("../img/icons/facebook.png")}
-#container > #content ul.work{margin:0 0;padding:0;max-height:300px;width:800px;margin:0 auto}
-#container > #content ul.work li{display:block;float:left;clear:none;margin:0 0 0;padding:0 0;width:800px}
+#container > .content{position:absolute;top:50%;margin-top:-81px;width:100%;background:rgba(0,0,0,0.25);overflow:hidden;}
+#container > .content .content-block{margin:30px 0}
+#container > .content.inactive{width:0}
+#container > .content p{line-height:24px;text-align:cen;margin:0 0 15px 0;padding:0 0}
+#container > .content ul{margin:15px 0 0 30px;padding:0}
+#container > .content ul li{margin:0;padding:0 0 0 5px;line-height:24px}
+#container > .content ul.icons{margin:0 0;padding:0 0 0 20px;width:288px;margin:auto}
+#container > .content ul.icons li{display:block;float:left;margin:0 32px 0 0;padding:0}
+#container > .content ul.icons li:last-child{margin:0 0 0 0}
+#container > .content ul.icons li a{width:32px;height:32px;font-size:10px;color:rgba(0,0,0,0);display:block;cursor:pointer;-webkit-border-radius:8px;-webkit-transition:all .25s ease-out;-moz-transition:all .25s ease-out;-o-transition:all .25s ease-out;transition:all .25s ease-out}
+#container > .content ul.icons li a:hover{-webkit-box-shadow:0 0 15px rgba(255,255,255,0.5);-moz-box-shadow:0 0 15px rgba(255,255,255,0.5);box-shadow:0 0 15px rgba(255,255,255,0.5)}
+#container > .content ul.icons li a.twitter{background:url("../img/icons/twitter.png")}
+#container > .content ul.icons li a.linkedin{background:url("../img/icons/linkedin.png")}
+#container > .content ul.icons li a.github{background:url("../img/icons/github.png")}
+#container > .content ul.icons li a.email{background:url("../img/icons/email.png")}
+#container > .content ul.icons li a.facebook{background:url("../img/icons/facebook.png")}
+#container > .content ul.work{margin:0 0;padding:0;max-height:300px;width:800px;margin:0 auto}
+#container > .content ul.work li{display:block;float:left;clear:none;margin:0 0 0;padding:0 0;width:800px}
 .grid-holder{position:relative;width:800px;margin:0 auto}
 .grid1{width:60px;margin-right:20px;float:left;min-height:10px}
 .grid2{width:140px;margin-right:20px;float:left;min-height:10px}
