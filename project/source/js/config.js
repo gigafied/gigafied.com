@@ -7,7 +7,8 @@ require.config({
         "Ember" : "components/ember/ember",
         "EmberAnimate" : "components/ember-animate/ember-animate",
         "Handlebars": "components/handlebars/handlebars",
-        "templates": "../templates"
+        "RAF" : "components/raf.js/raf",
+        "Tween": "components/tweenjs/src/Tween"
     },
 
     waitSeconds: 15,
@@ -31,6 +32,11 @@ require.config({
             deps: ["Ember"],
             exports: "Ember"
         },
+
+        "Tween" : {
+            deps : ["RAF"],
+            exports : "TWEEN"
+        }
     },
 
     ehbs : {

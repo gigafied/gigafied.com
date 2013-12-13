@@ -21,6 +21,8 @@
     "ember": "~1.2.0",
     "requirejs-ember-handlebars": "*",
     "ember-animated-outlet": "~1.0.0-beta",
-    "ember-animate": "*"
+    "ember-animate": "*",
+    "tweenjs": "*",
+    "raf.js": "~0.0.3"
   }
 }

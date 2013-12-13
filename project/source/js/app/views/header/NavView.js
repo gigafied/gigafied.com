@@ -21,7 +21,7 @@ define(
 					{
 						duration : 750,
 						easing : "cubic-bezier(0.525, 0.085, 0.255, 1.030)",
-						delay : 250,
+						delay : 500,
 						properties : {
 							opacity : 1,
 							"transform" : "translate3d(0, 0, 0)"
@@ -37,7 +37,7 @@ define(
 						delay : 0,
 						properties : {
 							opacity : 0,
-							"transform" : "translate3d(150px, 0, 0)"
+							"transform" : "translate3d(0, -25px, 0)"
 						}
 					}
 				]
