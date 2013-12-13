@@ -76,7 +76,6 @@ define(
 			},
 
 			animateIn : function (done) {
-				window.test = this;
 				this._super(done);
 			},
 
