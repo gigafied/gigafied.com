@@ -44,7 +44,7 @@
 			</script>
 		{% endraw %}
 
-		<!--
+		{% if DEBUG %}
 		<script src="source/js/components/requirejs/require.js"></script>
 		<script src="source/js/config.js"></script>
 
@@ -55,9 +55,9 @@
 				urlArgs : "cacheBust=" + (new Date()).getTime()
 			});
 		</script>
-		-->
-
+		{% else %}
 		<script src="static/js/app.min.js"></script>
+		{% endif %}
 
 		<script>
 
