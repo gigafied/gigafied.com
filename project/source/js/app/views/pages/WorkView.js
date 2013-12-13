@@ -3,14 +3,14 @@ define(
 	[
 		"Ember",
 		"app/App",
-		"./ContentView"
+		"./PageView"
 	],
 
-	function (Ember, App, ContentView) {
+	function (Ember, App, PageView) {
 
 		"use strict";
 
-		App.WorkView = ContentView.extend({
+		App.WorkView = PageView.extend({
 
 		});
 

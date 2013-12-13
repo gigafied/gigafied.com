@@ -2,13 +2,10 @@ define(
 
 	[
 		"Ember",
-		"app/App",
-		"./routes/AboutRoute",
-		"./routes/ContactRoute",
-		"./routes/WorkRoute"
+		"app/App"
 	],
 
-	function (Ember, App, AboutRoute, ContactRoute, WorkRoute) {
+	function (Ember, App) {
 
 		"use strict";
 

@@ -12,7 +12,7 @@ define(
         var App = Ember.Application.create();
         App.deferReadiness();
 
-		require(['app/Router'], function (Router) {
+		require(['app/Router', "app/Controllers", "app/Views", "app/Templates"], function (Router) {
 			App.advanceReadiness();
 		});
 
