@@ -5,7 +5,7 @@ define(
 		"EmberAnimate"
 	],
 
-	function (Ember, EmberAnimatedOutlet) {
+	function (Ember) {
 
 		"use strict";
 
