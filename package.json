@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-es6-module-transpiler": "~0.5.2",
     "stylus": "~0.41.1",
     "grunt-tasks-lister": "~0.1.0",
     "grunt-contrib-stylus": "~0.11.0",
