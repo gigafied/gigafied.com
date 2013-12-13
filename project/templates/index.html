@@ -44,6 +44,7 @@
 			</script>
 		{% endraw %}
 
+		<!--
 		<script src="source/js/components/requirejs/require.js"></script>
 		<script src="source/js/config.js"></script>
 
@@ -53,6 +54,12 @@
 				baseUrl : "source/js",
 				urlArgs : "cacheBust=" + (new Date()).getTime()
 			});
+		</script>
+		-->
+
+		<script src="static/js/app.min.js"></script>
+
+		<script>
 
             require(["app/App"], function (App) {
 

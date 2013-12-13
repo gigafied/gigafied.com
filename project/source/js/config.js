@@ -1,8 +1,8 @@
 require.config({
 
     paths: {
-        "$": "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery",
-        "text": "components/requirejs-text/text",
+        "$": "components/jquery/jquery",
+        "text" : "components/requirejs-text/text",
         "ehbs" : "components/requirejs-ember-handlebars/ehbs",
         "Ember" : "components/ember/ember",
         "EmberAnimate" : "components/ember-animate/ember-animate",
