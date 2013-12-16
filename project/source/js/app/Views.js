@@ -4,5 +4,5 @@ define(
 		"./views/pages/ContactView",
 		"./views/pages/WorkView",
 		"./views/header/HeaderView"
-	]
+	], {}
 );

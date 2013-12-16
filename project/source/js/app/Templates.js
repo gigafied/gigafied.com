@@ -6,5 +6,5 @@ define(
 		"ehbs!header/header",
 		"ehbs!header/logo",
 		"ehbs!header/nav"
-	]
+	], {}
 );

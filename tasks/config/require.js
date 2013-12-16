@@ -15,11 +15,7 @@ module.exports = function(grunt) {
 				include : [
 					"requirejs",
 					"config",
-					"app/App",
-					"app/Router",
-					"app/Controllers",
-					"app/Views",
-					"app/Templates"
+					"app/App"
 				]
 			}
 		}
