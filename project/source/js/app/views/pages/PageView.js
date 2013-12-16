@@ -9,7 +9,7 @@ define(
 
 		"use strict";
 
-		return Ember.View.extend({
+		var a = Ember.View.extend({
 
 			classNames : ["content"],
 
@@ -84,5 +84,11 @@ define(
 			}
 
 		});
+
+		a.EMBER = {
+			register : false
+		};
+
+		return a;
 	}
 );

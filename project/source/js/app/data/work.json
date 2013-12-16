@@ -1,0 +1,20 @@
+[
+	{
+		"id" : 1,
+		"title" : "",
+		"description" : "<p>A promotional site for the blu-ray release of<br/><i>Star Wars : The Complete Saga</i></p><p>The site enables users to vote, categorize, rate and favorite scenes from their favorite Star Wars films. The Visualizer reflects all user input, with advanced filtering options, users are able to see what scenes other people like and how they stack up to their own favorites.</p>",
+		"img" : "/static/img/work/moments-starwars.jpg"
+	},
+	{
+		"id" : 2,
+		"title" : "",
+		"description" : "<p>A promotional site for the blu-ray release of<br/><i>Star Wars : The Complete Saga</i></p><p>The site enables users to vote, categorize, rate and favorite scenes from their favorite Star Wars films. The Visualizer reflects all user input, with advanced filtering options, users are able to see what scenes other people like and how they stack up to their own favorites.</p>",
+		"img" : "/static/img/work/moments-starwars.jpg"
+	},
+	{
+		"id" : 3,
+		"title" : "",
+		"description" : "<p>A promotional site for the blu-ray release of<br/><i>Star Wars : The Complete Saga</i></p><p>The site enables users to vote, categorize, rate and favorite scenes from their favorite Star Wars films. The Visualizer reflects all user input, with advanced filtering options, users are able to see what scenes other people like and how they stack up to their own favorites.</p>",
+		"img" : "/static/img/work/moments-starwars.jpg"
+	}
+]

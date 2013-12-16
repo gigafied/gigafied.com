@@ -1,22 +1,18 @@
 define(
 
 	[
-		"Ember",
-		"app/App",
 		"./LogoView",
 		"./NavView"
 	],
 
-	function (Ember, App) {
+	function () {
 
 		"use strict";
 
-		App.HeaderView = Ember.View.extend({
+		return Ember.View.extend({
 			tagName : "header",
 			templateName : "header/header"
 
 		});
-
-		return App.HeaderView;
 	}
 );

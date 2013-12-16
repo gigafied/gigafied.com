@@ -2,11 +2,10 @@ define(
 
 	[
 		"Ember",
-		"app/App",
 		"app/utils/Tweener"
 	],
 
-	function (Ember, App, Tweener) {
+	function (Ember, Tweener) {
 
 		"use strict";
 
@@ -17,7 +16,7 @@ define(
 			fied : ""
 		});
 
-		App.LogoView = Ember.View.extend({
+		return Ember.View.extend({
 
 			tagName: "h1",
 			classNames : ["logo"],
@@ -144,7 +143,5 @@ define(
 			}
 
 		});
-
-		return App.LogoView;
 	}
 );

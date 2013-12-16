@@ -1,15 +1,16 @@
 define(
 
 	[
-		"Ember",
-		"app/App"
+		"Ember"
 	],
 
-	function (Ember, App) {
+	function (Ember) {
 
 		"use strict";
 
-		App.NavView = Ember.View.extend({
+		return Ember.View.extend({
+
+			isView : true,
 
 			tagName: "nav",
 			classNames : [],
@@ -49,7 +50,5 @@ define(
 			}
 
 		});
-
-		return App.NavView;
 	}
 );

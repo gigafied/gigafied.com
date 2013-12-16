@@ -4,7 +4,8 @@ require.config({
         "$": "components/jquery/jquery",
         "text" : "components/requirejs-text/text",
         "ehbs" : "components/requirejs-ember-handlebars/ehbs",
-        "Ember" : "components/ember/ember",
+        "EmberGlobal" : "components/ember/ember",
+        "Ember" : "components/ember-amd/ember-amd",
         "EmberAnimate" : "components/ember-animate/ember-animate",
         "Handlebars": "components/handlebars/handlebars",
         "RAF" : "components/raf.js/raf",
@@ -23,14 +24,17 @@ require.config({
             exports: "Handlebars"
         },
 
-        "Ember": {
+        "EmberGlobal": {
             deps: ["$", "Handlebars"],
             exports: "Ember"
         },
 
+        "Ember": {
+            deps: ["EmberGlobal"]
+        },
+
         "EmberAnimate": {
-            deps: ["Ember"],
-            exports: "Ember"
+            deps: ["EmberGlobal"]
         },
 
         "Tween" : {

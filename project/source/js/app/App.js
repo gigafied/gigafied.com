@@ -2,18 +2,30 @@ define(
 
 	[
 		"Ember",
-		"EmberAnimate"
+		"EmberAnimate",
+		"./routes",
+		"./controllers",
+		"./views",
+		"./templates"
 	],
 
 	function (Ember) {
 
 		"use strict";
 
-        var App = Ember.Application.create();
-        App.deferReadiness();
+		var App = Ember.Application.create("app");
 
-		require(['app/Router', "app/Controllers", "app/Views", "app/Templates"], function (Router) {
-			App.advanceReadiness();
+		App.Router.map(function () {
+			this.resource("pages", {path : "/"}, function () {
+				this.route("about");
+				this.route("work");
+				this.route("contact");
+				this.route("someTest");
+			});
+		});
+
+		App.Router.reopen({
+			location: 'history'
 		});
 
 		return App;

@@ -1,19 +1,13 @@
 define(
 
 	[
-		"Ember",
-		"app/App",
 		"./PageView"
 	],
 
-	function (Ember, App, PageView) {
+	function (PageView) {
 
 		"use strict";
-		
-		App.ContactView = PageView.extend({
 
-		});
-
-		return App.ContactView;
+		return PageView.extend({});
 	}
 );

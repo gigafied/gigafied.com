@@ -1,16 +1,10 @@
 define(
-
 	[
-		"Ember",
-		"ehbs!about",
-		"ehbs!work",
-		"ehbs!contact",
+		"ehbs!pages/about",
+		"ehbs!pages/work",
+		"ehbs!pages/contact",
 		"ehbs!header/header",
 		"ehbs!header/logo",
 		"ehbs!header/nav"
-	],
-
-	function (Ember) {
-		return Ember.TEMPLATES;
-	}
-)
+	]
+);

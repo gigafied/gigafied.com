@@ -10,7 +10,7 @@
 
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="/static/css/style.css">
 
 	</head>
 
@@ -21,7 +21,7 @@
 
 				<div id="container"> 
 
-					{{view "App.HeaderView"}}
+					{{view "header.header"}}
 
 					{{outlet "main"}}
 
@@ -30,20 +30,20 @@
 		{% endraw %}
 
 		{% if DEBUG %}
-			<script src="source/js/components/requirejs/require.js"></script>
-			<script src="source/js/config.js"></script>
+			<script src="/source/js/components/requirejs/require.js"></script>
+			<script src="/source/js/config.js"></script>
 
 			<script>
 
 				require.config({
-					baseUrl : "source/js",
+					baseUrl : "/source/js",
 					urlArgs : "cacheBust=" + (new Date()).getTime()
 				});
 			</script>
 	
 		{% else %}
 	
-			<script src="static/js/app.min.js"></script>
+			<script src="/static/js/app.min.js"></script>
 	
 		{% endif %}
 
